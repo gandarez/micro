@@ -383,6 +383,7 @@ func importOs() *lua.LTable {
 	L.SetField(pkg, "Symlink", luar.New(L, os.Symlink))
 	L.SetField(pkg, "TempDir", luar.New(L, os.TempDir))
 	L.SetField(pkg, "Truncate", luar.New(L, os.Truncate))
+	L.SetField(pkg, "UserHomeDir", luar.New(L, os.UserHomeDir))
 
 	return pkg
 }
